@@ -1,0 +1,19 @@
+{
+	"name": "Mute Person for Google+™",
+	"version": "1.0.1",
+	"description": "Hide people from your Google+™ stream without blocking them or removing them from your circles.",
+	"content_scripts": [
+	  {
+	    "matches": [
+	      "http://plus.google.com/*",
+	      "https://plus.google.com/*"
+	    ],
+	    "js": ["jquery-1.6.2.min.js", "jquery-html-history.min.js", "google+_mute_person.user.js"]
+	  }
+	],
+	"permissions": [
+          "tabs",
+	  "http://plus.google.com/*"
+	]
+
+}
